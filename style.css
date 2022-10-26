@@ -1,55 +1,76 @@
-99html, body {
+html, body {
   height: 100%;
-  width: 90%;
-  font-family: 'Readex Pro', sans-serif; 
-}
-
-body {
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-
-* {
-   padding: 0px;
-  margin: 0px;
-  text-decoration: none;
-}
-
-a {
-  color: gray;
-}
-
-ul {
-  list-style: none;
-}
-
-li {
-  padding: 0.2rem;
-}
-
-header {
-  display: flex;
-  padding: 1.5 rem;
-  border-bottom: 3px solid black;
-  justify-content: space-between;
-}
-
-.navigation {
-  display: flex
-}
-
-.nav-link {
-  text-decoration: none;
-  color: black;
-}
-
-.form label {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-}
-
-button {
   width: 100%;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.sedans,
+.suv,
+.luxury {
+  padding: 1rem;
+  color: white;
+  width: 150px;
+  background-color: orange;
+}
+
+.suv {
+  background-color: blue;
+}
+
+.luxury {
+  background-color: green;
+}
+
+.cta {
+  background-color: white;
   padding: 0.5rem;
+  border: 2px solid white;
+  border-radius: 1rem;
+}
+
+.sedans .cta:hover {
+  background-color: yellow;
+  color: white;
+}
+
+.suv .cta:hover {
+  background-color: blue;
+  color: white;
+}
+.luxury .cta:hover {
+  background-color: green;
+  color: white;
+}
+
+.parent {
+display: grid;
+height: 300px;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+.div1 { 
+  grid-area: 1 / 1 / 3 / 4; 
+  background-color: red;
+      }
+.div2 {
+  grid-area: 3 / 1 / 5 / 3;
+background-color: green;
+}
+.div3 { 
+  grid-area: 4 / 3 / 5 / 6; 
+background-color: blue;
+}
+.div4 {
+  grid-area: 3 / 3 / 4 / 6; 
+background-color:blue ;
+}
+.div5 {
+  grid-area: 1 / 4 / 3 / 6; 
+background-color: yellow;
 }
