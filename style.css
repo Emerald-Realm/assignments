@@ -1,0 +1,55 @@
+99html, body {
+  height: 100%;
+  width: 90%;
+  font-family: 'Readex Pro', sans-serif; 
+}
+
+body {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+* {
+   padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+a {
+  color: gray;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 0.2rem;
+}
+
+header {
+  display: flex;
+  padding: 1.5 rem;
+  border-bottom: 3px solid black;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.5rem;
+}
